@@ -2,13 +2,13 @@
 
 
 function sendMessage($phone, $authNum) {
-    $sID = "ncp:sms:kr:260492191885:cgvmock"; // 서비스 ID
+    $sID = $sID; // 서비스 ID
     $smsURL = "https://sens.apigw.ntruss.com/sms/v2/services/".$sID."/messages";
     $smsUri = "/sms/v2/services/".$sID."/messages";
-    $sKey = "a29e7e603f714c8886c91ae27620a3b1";
+    $sKey = $sKey
 
-    $accKeyId = "PEebs9oiPCNtxmX7TXsk";
-    $accSecKey = "QzGhxu7cTM0KSBtyGgktyaTgQbTplhcw2mCXvzJ7";
+    $accKeyId = $accKeyId;
+    $accSecKey = $accSecKey;
 
     $sTime = floor(microtime(true) * 1000);
 
@@ -16,7 +16,7 @@ function sendMessage($phone, $authNum) {
     $postData = array(
         'type' => 'SMS',
         'countryCode' => '82',
-        'from' => '01020554097', // 발신번호 (등록되어있어야함)
+        'from' => '01012345678', // 발신번호 (등록되어있어야함)
         'contentType' => 'COMM',
         'content' => "[한국모바일인증(주)]본인확인 인증번호[".$authNum."]입니다. \"타인 노출 금지\"",
         'messages' => array(array('content' => "[한국모바일인증(주)]본인확인 인증번호[".$authNum."]입니다. \"타인 노출 금지\"", 'to' => $phone))
