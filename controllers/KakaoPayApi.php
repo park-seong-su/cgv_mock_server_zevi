@@ -27,8 +27,8 @@ function kakaoPayReady($reservationInfo) {
     $http_host = 'https://dev-api.cgvmock.site/reservation'; //개발 서버
     //$http_host = 'https://api.cgvmock.site/reservation'; //실제 서버
     
-    $adminkey = 'ee4d52c837ae799dcd738ae6e0ced136'; //admin 키
-    $cid = 'TC0ONETIME'; //임시 cid
+    $adminkey = $adminkey; //admin 키
+    $cid = $cid; //임시 cid
 
     $req_auth   = 'Authorization: KakaoAK '.$adminkey;
     $req_cont   = 'Content-type: application/x-www-form-urlencoded;charset=utf-8';
@@ -63,8 +63,8 @@ function kakaoPayReady($reservationInfo) {
 
 
 function kakaoPaySuccess($reservationID, $userID, $tid) {
-    $adminkey = 'ee4d52c837ae799dcd738ae6e0ced136'; //admin 키
-    $cid = 'TC0ONETIME'; //임시 cid
+    $adminkey = $adminkey; //admin 키
+    $cid = $cid; //임시 cid
 
     $req_auth   = 'Authorization: KakaoAK '.$adminkey;
     $req_cont   = 'Content-type: application/x-www-form-urlencoded;charset=utf-8';
