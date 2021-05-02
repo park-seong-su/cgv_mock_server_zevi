@@ -2,8 +2,8 @@
 
 
 function geocodingApiCall($address, $longitude, $latitude) {
-    $clientID = "l31xzyaf5n";
-    $clidentSecrete = "sXsvCm84rv5rdmAxhB4iaBcwh96NqqC8tYkKElGn";
+    $clientID = $clientID
+    $clidentSecrete = $clidentSecrete;
     $header = array(
         "X-NCP-APIGW-API-KEY-ID: ".$clientID,
         "X-NCP-APIGW-API-KEY: ".$clidentSecrete
